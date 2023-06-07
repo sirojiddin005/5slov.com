@@ -1,0 +1,66 @@
+header {
+    min-width: 100%;
+    min-height: 200px;
+    color: white;
+    background-color: rgb(26, 26, 73);
+    position: relative;
+
+
+    .menu {
+        min-width: 100%;
+        background-color: rgba(37, 37, 37, 0.986);
+        position: absolute;
+        bottom: 0;
+        
+        a {
+            border-left: 1px solid black;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            transition: 1s;
+
+            &:last-child {
+                border-right: 1px solid black;
+            }
+            &:hover {
+                background-color: rgba(65, 64, 64, 0.986);
+                color: rgb(50, 190, 255);
+            }
+        }
+    }
+  .accordion-item {
+    background-color: rgba(37, 37, 37, 0.986);
+    color: white;
+  }
+  .accordion-button {
+    background-color: rgba(37, 37, 37, 0.986);
+    color: white;
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    
+       a {
+           padding: 15px !important;
+           font-size: 12px !important;
+       }
+    }
+}
+@media (max-width: 800px) {
+    .main {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .menu {
+        a {
+            display: none;
+        }
+    }
+}
+@media (min-width: 800px) {
+    .dropdown {
+        display: none;
+    }
+}

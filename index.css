@@ -1,0 +1,200 @@
+header {
+  min-width: 100%;
+  min-height: 200px;
+  color: white;
+  background-color: rgb(26, 26, 73);
+  position: relative;
+}
+header .menu {
+  min-width: 100%;
+  background-color: rgba(37, 37, 37, 0.986);
+  position: absolute;
+  bottom: 0;
+}
+header .menu a {
+  border-left: 1px solid black;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: 1s;
+}
+header .menu a:last-child {
+  border-right: 1px solid black;
+}
+header .menu a:hover {
+  background-color: rgba(65, 64, 64, 0.986);
+  color: rgb(50, 190, 255);
+}
+header .accordion-item {
+  background-color: rgba(37, 37, 37, 0.986);
+  color: white;
+}
+header .accordion-button {
+  background-color: rgba(37, 37, 37, 0.986);
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .menu a {
+    padding: 15px !important;
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 800px) {
+  .main {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .menu a {
+    display: none;
+  }
+}
+@media (min-width: 800px) {
+  .dropdown {
+    display: none;
+  }
+}
+main {
+  min-width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 70px 50px;
+}
+main .left .reklama {
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+main .left .reklama p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+}
+main .icons a:hover {
+  opacity: 70%;
+}
+
+@media (max-width: 800px) {
+  .right {
+    width: 100% !important;
+  }
+  .right .reklama {
+    display: none !important;
+  }
+  main {
+    padding: 30px 10px;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+footer {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  color: white;
+  background-color: rgb(42, 42, 43);
+  position: relative;
+}
+footer ul {
+  margin: 15px;
+  padding: 0;
+}
+footer ul li {
+  color: rgb(19, 149, 255);
+  margin-bottom: 20px;
+}
+footer ul li a {
+  color: rgb(19, 149, 255);
+  font-size: 14px;
+}
+footer ul li:hover, footer ul a:hover {
+  color: rgb(0, 98, 179);
+}
+footer .icons2 {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(41, 41, 41);
+  text-align: center;
+  border: 1px solid rgb(184, 184, 184);
+  border-radius: 5px;
+  margin: 2px;
+}
+footer .icons2 .fa-brands {
+  color: rgb(184, 184, 184);
+  line-height: 35px;
+  margin: 0;
+  transition: 0.5s;
+}
+footer .icons2 .fa-brands:hover {
+  color: white;
+}
+footer .foot {
+  width: 100%;
+  padding: 30px;
+  background-color: rgb(32, 32, 32);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 800px) {
+  .footer, .foot {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .foot {
+    padding: 20px !important;
+    font-size: 12px;
+  }
+  .s {
+    margin-bottom: 30px;
+  }
+  .head {
+    display: flex !important;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+* {
+  transition: 0.3s;
+}
+
+body {
+  color: black;
+}
+
+.back {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.container {
+  padding: 0 100px;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 995px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 770px) {
+  .container {
+    padding: 0 30px;
+  }
+}/*# sourceMappingURL=index.css.map */

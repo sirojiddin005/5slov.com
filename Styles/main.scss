@@ -1,0 +1,42 @@
+main {
+    min-width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 70px 50px;
+
+    .left {
+
+       .reklama {
+        width: auto;
+        height: auto;
+        margin: auto;
+
+        p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: white;
+        }
+       }
+    }
+    .icons {
+        a {
+            &:hover {
+                opacity: 70%;
+            }
+        }
+    }
+}
+@media (max-width: 800px) {
+    .right {
+        width: 100% !important;
+        .reklama {
+           display: none !important;
+        }
+    }
+    main {
+        padding: 30px 10px;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
